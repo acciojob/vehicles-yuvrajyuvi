@@ -12,7 +12,7 @@ public class Vehicle {
     }
 
     public Vehicle(String name) {
-        this.name=name;
+         this.name=name;
 
     }
 

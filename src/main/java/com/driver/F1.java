@@ -9,8 +9,8 @@ public class F1 extends Car {
 
     public  F1(String name , boolean b) {
         super(b);
-        this.name=name;
-        this.cartype=b ;
+         this.name=name;
+         this.cartype=b ;
 
         //Use arbitrary values for parameters which are not mentioned
     }
