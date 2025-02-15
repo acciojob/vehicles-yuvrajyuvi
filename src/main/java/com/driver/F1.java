@@ -3,12 +3,8 @@ package com.driver;
 public class F1 extends Car {
     private String name;
     private boolean cartype;
-    private int rate;
-    private int direction;
-
 
     public  F1(String name , boolean b) {
-        super(b);
          this.name=name;
          this.cartype=b ;
 
@@ -63,6 +59,6 @@ public class F1 extends Car {
         }
     }
     public int getCurrentDirection(){
-        return direction;
+        return super.getCurrentDirection();
     }
 }
