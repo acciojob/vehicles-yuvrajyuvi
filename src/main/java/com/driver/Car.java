@@ -41,6 +41,17 @@ public class Car extends Vehicle {
     public String getType(){
         return type;
     }
+    public void setType(String a){
+        type = a;
+    }
+    public void isManual(){
+        if(isManual==true){
+            setType("Manual");
+        }
+        else{
+            setType("notManual");
+        }
+    }
     public void changeGear(int newGear){
 
         System.out.println("changeGear method called - The gear is changed to: " + currentGear);
