@@ -1,4 +1,5 @@
 package com.driver;
+import java.lang.String;
 public class Vehicle {
 
     private String name;
@@ -10,9 +11,12 @@ public class Vehicle {
         this.name = name;
 
     }
+    public String getName(){
+        return name;
+    }
 
     public void steer(int direction) {
-        currentDirection=direction;
+        setCurrentDirection(direction);
         //direction is in degrees, add it to the current direction
         System.out.println("steer method called - The direction is changed to: " + currentDirection + " degrees");
     }

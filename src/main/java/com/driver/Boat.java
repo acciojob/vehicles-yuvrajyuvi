@@ -1,5 +1,5 @@
 package com.driver;
-import java.util.*;
+import java.lang.String;
 public class Boat implements WaterVehicle {
    public String name;
     private int capacity;
