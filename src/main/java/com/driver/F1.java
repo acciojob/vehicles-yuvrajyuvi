@@ -1,18 +1,23 @@
 package com.driver;
-import java.util.*;
+
 public class F1 extends Car {
-    private String name;
-    private boolean cartype;
+    String name;
+    boolean type;
 
-    public  F1(String name , boolean b) {
-         this.name=name;
-         this.cartype=b ;
-
-        //Use arbitrary values for parameters which are not mentioned
+    public  F1(String mercedes, boolean b) {
+        super(mercedes);
+        this.name =mercedes;
+        this.type=b;
     }
 
+
+
+        //Use arbitrary values for parameters which are not mentioned
+
+
     public void accelerate(int rate){
-        int newSpeed = rate; //set the value of new speed by using currentSpeed and rate
+        super.setCurrentSpeed(rate);
+      int newSpeed =  super.getCurrentSpeed();//set the value of new speed by using currentSpeed and rate
         /**
          * speed 0: gear 1
          * speed 1-50: gear 1
@@ -58,7 +63,5 @@ public class F1 extends Car {
             changeSpeed(newSpeed, getCurrentDirection());
         }
     }
-    public int getCurrentDirection(){
-        return super.getCurrentDirection();
-    }
+
 }
