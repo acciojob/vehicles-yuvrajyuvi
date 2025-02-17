@@ -2,7 +2,7 @@ package com.driver;
 import java.lang.*;
 public class Car extends Vehicle {
     private int wheels;
-    private String type;
+    public String type;
     private int doors;
     private int gears;
     private boolean isManual;
@@ -18,14 +18,14 @@ public class Car extends Vehicle {
     }
 
 
-    public Car( String name,int wheels, int doors, int gears, boolean isManual, int seats) {
+    public Car( String name,String type,int wheels, int doors, int gears, boolean isManual, int seats) {
         super(name);
         this.wheels=wheels;
         this.doors=doors;
         this.gears=gears;
         this.isManual=isManual;
         this.seats=seats;
-        this.type ="sedan";
+        this.type =type;
     }
     public int getWheels(){return wheels;}
     public int getDoors(){return doors;}

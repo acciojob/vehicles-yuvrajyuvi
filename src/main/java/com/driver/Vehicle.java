@@ -2,7 +2,7 @@ package com.driver;
 import java.lang.*;
 public class Vehicle {
 
-    private String name;
+    public String name;
     private int currentSpeed;
     private int currentDirection;
 

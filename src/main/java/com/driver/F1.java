@@ -2,8 +2,8 @@ package com.driver;
 import java.lang.*;
 
 public class F1 extends Car {
-    String name;
-    boolean type;
+   public String name;
+     private  boolean type;
 
     public  F1(String mercedes, boolean b) {
         super(mercedes,b);
