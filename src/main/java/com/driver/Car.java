@@ -1,5 +1,5 @@
 package com.driver;
-import java.lang.String;
+import java.lang.*;
 public class Car extends Vehicle {
     private int wheels;
     private String type;

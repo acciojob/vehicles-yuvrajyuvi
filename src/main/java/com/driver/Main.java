@@ -8,6 +8,8 @@ public class Main {
         mercedes.accelerate(20);
         mercedes.accelerate(60);
         Boat b =new Boat("nimbus",100);
+       System.out.println( "the capacity : "+b.getVehicleCapacity());
+       System.out.println("the name is : "+b.getVehicleName());
 
     }
 }
