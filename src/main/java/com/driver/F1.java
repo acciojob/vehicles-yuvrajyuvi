@@ -5,10 +5,8 @@ public class F1 extends Car {
    public String name;
      private  boolean type;
 
-    public  F1(String mercedes, boolean b) {
-        super(mercedes,b);
-        this.name =mercedes;
-        this.type=b;
+    public  F1(String name, boolean isManual) {
+        super(name,4,4,6,isManual,"racing",1);
     }
 
         //Use arbitrary values for parameters which are not mentioned
@@ -59,7 +57,7 @@ public class F1 extends Car {
         //for all other cases, change the gear accordingly
 
         if(newSpeed > 0) {
-            super.changeSpeed(newSpeed, super.getCurrentDirection());
+            changeSpeed(newSpeed, super.getCurrentDirection());
         }
     }
 
