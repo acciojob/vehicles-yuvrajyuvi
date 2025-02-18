@@ -1,8 +1,7 @@
 package com.driver;
-import java.lang.*;
 public class Vehicle {
 
-    public String name;
+    private String name;
     private int currentSpeed;
     private int currentDirection;
     public Vehicle(String name) {
@@ -11,13 +10,6 @@ public class Vehicle {
         this.currentDirection=0;
 
     }
-    public void  setName(String name){
-        this.name=name;
-    }
-    public String getName(){
-        return name;
-    }
-
     public void steer(int direction) {
         this.currentDirection=currentDirection+direction;
         //direction is in degrees, add it to the current direction
@@ -35,17 +27,11 @@ public class Vehicle {
         this.currentSpeed=0;
         System.out.println("stop method called - The vehicle is stopped");
     }
-    public void setCurrentSpeed(int speed){
-        this.currentSpeed=speed;
-    }
     public int getCurrentSpeed(){
         return currentSpeed;
-    }
-    public void setCurrentDirection(int direction){
-        this.currentDirection=direction;
     }
     public int getCurrentDirection(){
         return currentDirection;
     }
-
+    public String getName(){return name;}
     }
