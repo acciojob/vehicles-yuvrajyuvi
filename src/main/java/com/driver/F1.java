@@ -60,5 +60,4 @@ public class F1 extends Car {
             changeSpeed(newSpeed, super.getCurrentDirection());
         }
     }
-
 }
